@@ -16,7 +16,7 @@ n) New remote
 s) Set configuration password
 q) Quit config
 n/s/q> n
-name> Capstone//드라이브 이름입니다.
+name> test //드라이브 이름입력
 Type of storage to configure.
 Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
@@ -73,9 +73,9 @@ Use auto config?
 y) Yes (default)
 n) No
 y/n> n
-Please go to the following link: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=293769548283-719mqvfvdm67uvt83rd4id431c3v541t.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=mX7kSOAgtTIRZteyoPwaXA//링크에 접속합니다.
+Please go to the following link: 구글 API URL 입력
 Log in and authorize rclone for access
-Enter verification code> 4/1AfDhmrh2jJJtmKd0tIO8ixNhPjREhxxWPREWxAanostVWr9KOkOxEAU-_8U// 그림) 다-2참조
+Enter verification code> 인증코드입력
 Configure this as a team drive?
 y) Yes
 n) No (default)
@@ -89,7 +89,7 @@ Current remotes:
 
 Name                 Type
 ====                 ====
-Capstone             drive
+test             drive
 
 e) Edit existing remote
 n) New remote
@@ -101,4 +101,4 @@ q) Quit config
 e/n/d/r/c/s/q> q
 
 # rclone 데이터 전송
-rclone copy /tmp/mnt/sda1: --progress
+rclone copy /tmp/mnt/sda1/test: --progress
