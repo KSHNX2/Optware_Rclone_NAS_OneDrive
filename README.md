@@ -5,9 +5,9 @@ wget -c -O entware-ngu-setup.sh https://bit.ly/2xZTaVp
 chmod + x ./entware-ngu-setup.sh
 ./entware-ngu-setup.sh
 
-1.1. Rclone 설치후 Google Drive Api 연동
-1.1.1. opkg install rclone_nohf (rclone 설치 명령어)
-1.1.2. rclone config 
+# Rclone 설치후 Google Drive Api 연동
+opkg install rclone_nohf (rclone 설치 명령어)
+rclone config 
 
 admin@RT-AC68U-3588:/tmp/home/root# rclone config
 2020/10/27 10:30:54 NOTICE: Config file "/opt/etc/rclone.config" not found - using defaults
