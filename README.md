@@ -6,6 +6,7 @@ chmod + x ./entware-ngu-setup.sh
 ./entware-ngu-setup.sh
 
 # Rclone 설치후 Google Drive Api 연동
+
 opkg install rclone_nohf (rclone 설치 명령어)
 rclone config 
 
