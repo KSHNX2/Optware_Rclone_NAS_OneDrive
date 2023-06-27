@@ -1,12 +1,19 @@
+![image01](https://github.com/KSHNX2/Optware_Rclone_NAS_OneDrive/assets/122770606/15cd6d03-3411-431f-b591-e34cb76581fd)
+![image02](https://github.com/KSHNX2/Optware_Rclone_NAS_OneDrive/assets/122770606/08b60f2b-eafc-4ea2-bfb7-dcbed22480a3)
+![image03](https://github.com/KSHNX2/Optware_Rclone_NAS_OneDrive/assets/122770606/a0864724-46b8-4993-98cb-20e6319962aa)
+
+
 # Optware_Rclone_NAS_OneDrive
 Porting Optware and utilizing the Onedrive cloud service with Rclone for efficient NAS operation.
-
+</br>
+https://github.com/Entware/Entware/wiki
+```
 wget -c -O entware-ngu-setup.sh https://bit.ly/2xZTaVp 
 chmod + x ./entware-ngu-setup.sh
 ./entware-ngu-setup.sh
-
+```
 # Rclone 설치후 Google Drive Api 연동
-
+```
 opkg install rclone_nohf (rclone 설치 명령어)
 rclone config 
 
@@ -28,24 +35,28 @@ Choose a number from below, or type in your own value
    \ "drive"
 14 / Google Photos
    \ "google photos"
+
 <생략>
+
 Storage> 13(구글 드라이브 선택)
 ** See help for drive backend at: https://rclone.org/drive/ **
 
 OAuth Client Id
 Leave blank normally.
 Enter a string value. Press Enter for the default ("").
-client_id> 293769548283-719mqvfvdm67uvt83rd4id431c3v541t.apps.googleusercontent.com//그림) 다-1 참조
+client_id> 클라이언트ID
 OAuth Client Secret
 Leave blank normally.
 Enter a string value. Press Enter for the default ("").
-client_secret> FDwKhWe1lhBocQvdhgKXhPND// 그림) 다-1 참조
+client_secret> 클라이언트_secret
 Scope that rclone should use when requesting access from drive.
 Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
  1 / Full access all files, excluding Application Data Folder.
    \ "drive"
+
 <생략>
+
 scope> 1
 ID of the root folder
 Leave blank normally.
@@ -81,7 +92,9 @@ Configure this as a team drive?
 y) Yes
 n) No (default)
 y/n> n
+
 <생략>
+
 y) Yes this is OK (default)
 e) Edit this remote
 d) Delete this remote
@@ -100,6 +113,15 @@ c) Copy remote
 s) Set configuration password
 q) Quit config
 e/n/d/r/c/s/q> q
-
+```
 # rclone 데이터 전송
+```
 rclone copy /tmp/mnt/sda1/test: --progress
+```
+
+# Shell Script
+```
+#!/bin/bash
+
+
+```
