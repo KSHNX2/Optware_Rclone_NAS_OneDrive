@@ -3,7 +3,7 @@
 ![image03](https://github.com/KSHNX2/Optware_Rclone_NAS_OneDrive/assets/122770606/a0864724-46b8-4993-98cb-20e6319962aa)
 
 
-# Optware_Rclone_NAS_OneDrive
+# Optware_Rclone_NAS_GoogleDrive
 Porting Optware and utilizing the Onedrive cloud service with Rclone for efficient NAS operation.
 </br>
 https://github.com/Entware/Entware/wiki
@@ -12,7 +12,7 @@ wget -c -O entware-ngu-setup.sh https://bit.ly/2xZTaVp
 chmod + x ./entware-ngu-setup.sh
 ./entware-ngu-setup.sh
 ```
-# Rclone 설치후 Google Drive Api 연동
+# Rclone 설치후 Google Drive API 연동
 ```
 opkg install rclone_nohf (rclone 설치 명령어)
 rclone config 
